@@ -1,0 +1,108 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Helvetica;
+}
+a{
+text-decoration: none;
+}
+li{
+list-style: none;
+}
+header li{
+background-color: black;
+border: .005rem solid #838282;
+padding: .5rem;
+}
+header a{
+color: white;
+}
+header li:hover{
+background-color: #5c5959;
+}
+h2{
+background-color: black;
+color: white;
+text-align: center;
+padding: .5rem;
+}
+main{
+margin: .5rem;
+}
+aside{
+background-color: #cecece;
+margin-bottom: 1rem;
+}
+aside div{
+display: flex;
+justify-content: center;
+padding: .5rem;
+}
+aside p{
+padding: .5rem;
+}
+section ul{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+section li{
+text-align: center;
+background-color: #cecece;
+border-radius: .5rem;
+border: .1rem solid black;
+padding: .5rem;
+margin: .2rem;
+font-weight: bolder;
+}
+section li:hover{
+background-color: black;
+border: .1rem solid #cecece;
+color: white;
+cursor: pointer;
+}
+.courses{
+display: grid;
+}
+.courses span{
+background-color: #cecece;
+border: .05rem solid black;
+border-radius: .1rem;
+text-align: center;
+padding: .4rem;
+margin: .15rem;
+}
+.hamburge{
+display: grid;
+grid-template-columns: 1fr 3fr .7fr;
+justify-content: center;
+align-items: center;
+}
+.hamburge span{
+font-weight: bolder;
+}
+.toggle::before{
+content: "\2630";
+font-size: large;
+font-weight: bolder;
+}
+.show::before{
+content: "\00D7";
+font-size:xx-large;
+font-weight: lighter;
+}
+.hide{
+display: none;
+}
+footer ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+footer div{
+background-color: #cecece;
+padding: 1rem;
+}
+footer p{
+text-align: center;
+}

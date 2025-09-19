@@ -1,0 +1,26 @@
+@media screen and (min-width: 640px){
+header ul{
+display: grid;
+grid-template-columns: .1fr .2fr .2fr 1fr;
+background-color: black;
+text-align: center;
+}
+.courses{
+grid-template-columns: repeat(3,1fr);
+}
+.hamburge{
+display: flex;
+justify-content: flex-start;
+}
+.hide{
+display: block;
+}
+.toggle{
+display: none;
+}
+.aside{
+display: grid;
+grid-template-columns: 3fr 1.5fr;
+gap: 1rem;
+}
+}
