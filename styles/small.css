@@ -93,6 +93,10 @@ font-weight: lighter;
 .hide{
 display: none;
 }
+#cred{
+text-align: center; 
+padding: 1rem;
+}
 footer ul
 {
 display: flex;
