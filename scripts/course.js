@@ -77,22 +77,22 @@ const courses = [
         completed: false
     }
 ];
-let div = document.querySelector(".courses");
+let sect = document.querySelector(".courses");
 let all = document.getElementById("all");
 let cse = document.getElementById("cse");
 let wdd = document.getElementById("wdd"); 
 let cred = document.querySelector("#cred");
 createCard(courses.filter(course => course.subject == "CSE"));
 all.addEventListener('click',()=>{
-div.innerHTML = "";
+sect.innerHTML = "";
 createCard(courses);
 })
 cse.addEventListener('click',()=>{
-div.innerHTML = "";
+sect.innerHTML = "";
 createCard(courses.filter(course => course.subject == "CSE"))
 })
 wdd.addEventListener('click',()=>{
-div.innerHTML = "";
+sect.innerHTML = "";
 createCard(courses.filter(course => course.subject == "WDD"))
 })
 function createCard(list){
@@ -100,7 +100,7 @@ let totalCred = 0;
 list.forEach(course => {
 span = document.createElement("span");
 span.textContent = `${course.subject} ${course.number}`;
-div.appendChild(span);
+sect.appendChild(span);
 totalCred += course.credits;
 });
 cred.textContent = `The total credit for course listed above is ${totalCred}.`;
