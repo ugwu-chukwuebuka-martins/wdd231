@@ -100,6 +100,9 @@ let totalCred = 0;
 list.forEach(course => {
 span = document.createElement("span");
 span.textContent = `${course.subject} ${course.number}`;
+if (course.completed){
+span.setAttribute("id","mark");
+}
 sect.appendChild(span);
 totalCred += course.credits;
 });
