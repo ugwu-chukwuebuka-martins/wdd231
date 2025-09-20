@@ -97,6 +97,9 @@ display: none;
 text-align: center; 
 padding: 1rem;
 }
+#mark::before{
+content: "✅";
+}
 footer ul
 {
 display: flex;
