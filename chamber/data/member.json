@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Home Page 130",
+    "address": "Nigeria",
+    "phone": "----------",
+    "website": "https://ugwu-chukwuebuka-martins.github.io/wdd130",
+    "image": "https://ugwu-chukwuebuka-martins.github.io/wdd130/images/profile.jpg",
+    "membershipLevel": 3,
+    "email": "info@hightemp.wwr"
+  },
+  {
+    "name": "HighTemp",
+    "address": "Nigeria",
+    "phone": "----------",
+    "website": "https://ugwu-chukwuebuka-martins.github.io/wdd130/wwr",
+    "image": "https://ugwu-chukwuebuka-martins.github.io/wdd130/wwr/images/ht.jpg",
+    "membershipLevel": 2,
+    "email": "contact@hightemp.wwr"
+  },
+  {
+    "name": "Home Page 131",
+    "address": "Nigeria",
+    "phone": "----------",
+    "website": "https://ugwu-chukwuebuka-martins.github.io/wdd131",
+    "image": "https://ugwu-chukwuebuka-martins.github.io/wdd131/images/profile.png",
+    "membershipLevel": 1,
+    "email": "contact@wtx.com"
+  },
+  {
+    "name": "Filtered Temples",
+    "address": "Nigeria",
+    "phone": "----------",
+    "website": "https://ugwu-chukwuebuka-martins.github.io/wdd131/filtered-temples.html",
+    "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
+    "membershipLevel": 2,
+    "email": "filter@wtx.com"
+  },
+  {
+    "name": "Place",
+    "address": "Nigeria",
+    "phone": "----------",
+    "website": "https://ugwu-chukwuebuka-martins.github.io/wdd131/place.html",
+    "image": "https://ugwu-chukwuebuka-martins.github.io/wdd131/images/hero-small.webp",
+    "membershipLevel": 3,
+    "email": "care@place.ng"
+  },
+  {
+    "name": "WebTronix",
+    "address": "Nigeria",
+    "phone": "----------",
+    "website": "https://ugwu-chukwuebuka-martins.github.io/wdd131/project",
+    "image": "https://ugwu-chukwuebuka-martins.github.io/wdd131/project/images/logo.png",
+    "membershipLevel": 3,
+    "email": "info@wtx.com"
+  },
+  {
+    "name": "WTX 231",
+    "address": "Nigeria",
+    "phone": "----------",
+    "website": "https://ugwu-chukwuebuka-martins.github.io/wdd231",
+    "image": "https://ugwu-chukwuebuka-martins.github.io/wdd231/images/photo.png",
+    "membershipLevel": 1,
+    "email": "homepage@wtx.com"
+  }
+]
