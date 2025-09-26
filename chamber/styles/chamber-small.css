@@ -29,6 +29,9 @@ color: white;
 header li:hover{
 background-color: var(--primary-color);
 }
+header span{
+font-weight: bolder;
+}
 main{
 display: grid;
 justify-content: center;
@@ -135,6 +138,7 @@ font-weight: bolder;
 .show::before{
 content: "\00D7";
 font-size:xx-large;
+font-weight: lighter;
 }
 .hide{
 display: none;
