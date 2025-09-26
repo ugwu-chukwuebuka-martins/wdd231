@@ -23,12 +23,10 @@ border-radius: .5rem .5rem 0 0;
 background-color: white;
 margin-bottom: .2rem;
 }
-.list{
-div{
+.list div{
 padding: .5rem;
 }
-h3, p, span{
+.list h3, .list p, .list span{
 font-size: large;
-}
 }
 }
