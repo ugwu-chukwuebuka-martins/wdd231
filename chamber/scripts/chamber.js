@@ -1,0 +1,63 @@
+let toggle = document.querySelector(".toggle");
+let show = document.querySelector(".hide");
+toggle.addEventListener('click',()=>{
+show.classList.toggle("hide");
+toggle.classList.toggle("show");
+});
+
+let cYear = document.getElementById("currentyear");
+let date = new Date();
+cYear.textContent = date.getFullYear();
+let lModified = document.querySelector("#lastModified");
+let lDate = new Date(2025,8,19);
+lModified.innerText =  lDate;
+
+let card = document.querySelector(".cards");
+let grid = document.getElementById("grid");
+let list = document.querySelector("#list");
+
+grid.addEventListener("click",()=>{
+card.classList.add("grid");
+card.classList.remove("list");
+});
+
+list.addEventListener("click",()=>{
+card.classList.add("list");
+card.classList.remove("grid");
+});
+
+const data = getData();
+createCard(data);
+
+function createCard(list){
+list.forEach(i => {
+let div = document.createElement("div");
+let a = document.createElement("a");
+a.setAttribute("href",i["website"]);
+let h3 = document.createElement("h3");
+h3.textContent = i.name;
+let img = document.createElement("img");
+img.setAttribute("src",i.image);
+img.setAttribute("id","img");
+let btn = document.createElement("img");
+btn.setAttribute("src","images/btn.png");
+btn.setAttribute("id","btn");
+let p = document.createElement("p");
+p.textContent = i["address"];
+let span = document.createElement("span");
+span.textContent = i["email"];
+a.appendChild(h3);
+a.appendChild(btn);
+a.appendChild(img);
+a.appendChild(p);
+a.appendChild(span);
+div.appendChild(a);
+card.appendChild(div);
+});
+}
+
+async function getData(){
+const response = await fetch("https://github.com/ugwu-chukwuebuka-martins/wdd231/data/member.json");
+const data = await response.json();
+return data;
+}
