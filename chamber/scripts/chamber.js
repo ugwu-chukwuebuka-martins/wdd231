@@ -57,7 +57,7 @@ card.appendChild(div);
 }
 
 async function getData(){
-const response = await fetch("https://github.com/ugwu-chukwuebuka-martins/wdd231/data/member.json");
+const response = await fetch("https://github.com/ugwu-chukwuebuka-martins/wdd231/chamber/data/member.json");
 const data = await response.json();
 return data;
 }
