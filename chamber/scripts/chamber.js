@@ -57,7 +57,7 @@ card.appendChild(div);
 }
 
 async function getData(){
-const response = await fetch("https://github.com/ugwu-chukwuebuka-martins/wdd231/blob/main/chamber/data/member.json");
+const response = await fetch("data/member.json");
 const data = await response.json();
 return data;
 }
