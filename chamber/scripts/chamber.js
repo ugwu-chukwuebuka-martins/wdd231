@@ -26,8 +26,7 @@ card.classList.add("list");
 card.classList.remove("grid");
 });
 
-const data = getData();
-createCard(data);
+getData();
 
 function createCard(list){
 list.forEach(i => {
@@ -57,7 +56,7 @@ card.appendChild(div);
 }
 
 async function getData(){
-const response = await fetch("data/member.json");
+const response = await fetch("https://ugwu-chukwuebuka-martins.github.io/wdd231/chamber/data/member.json");
 const data = await response.json();
-return data;
+createCard(data);
 }
