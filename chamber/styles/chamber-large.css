@@ -29,4 +29,11 @@ padding: .5rem;
 .list h3, .list p, .list span{
 font-size: large;
 }
+.ew{
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+}
+.spotlight aside{
+width: 30%;
+}
 }

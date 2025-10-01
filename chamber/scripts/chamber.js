@@ -59,4 +59,5 @@ async function getData(){
 const response = await fetch("https://ugwu-chukwuebuka-martins.github.io/wdd231/chamber/data/member.json");
 const data = await response.json();
 createCard(data);
+spotlightCard(data);
 }
