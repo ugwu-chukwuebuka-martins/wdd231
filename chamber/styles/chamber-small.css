@@ -195,16 +195,17 @@ margin-top: 2rem;
 display: grid;
 width: 100%;
 text-align: center;
-position: relative;
 padding: .1rem;
 margin: .2rem;
 border: .5rem solid var(--secondary-color);
 border-radius: 0 1rem 1rem 0;
 }
+.spotlight #div{
+display: grid;
+grid-template-columns: 1fr 3fr;
+}
 .spotlight aside img{
-position: absolute;
-left: -1%;
-width: 5rem;
+width: 100%;
 height: 100%;
 }
 .hamburge{
