@@ -19,8 +19,8 @@ days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 day = new Date();
 function daY(b){
 if (b >= 7){
-b = 0;
-return days[b];
+a = b-7;
+return days[a];
 }
 else{
 return days[b];
