@@ -16,6 +16,10 @@ list-style: none;
 }
 header{
 background-color: var(--primary-color);
+position: fixed;
+z-index: 2;
+width: 100%;
+top: 0;
 }
 header li{
 background-color: var(--secondary-color);
@@ -35,9 +39,8 @@ font-weight: bolder;
 main{
 display: grid;
 justify-content: center;
-margin: .5rem;
+margin: 9% .5rem .5rem .5rem;
 }
-
 .gl{
 display: flex;
 justify-content: center;
