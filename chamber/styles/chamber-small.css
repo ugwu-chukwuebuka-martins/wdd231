@@ -39,7 +39,7 @@ font-weight: bolder;
 main{
 display: grid;
 justify-content: center;
-margin: 9% .5rem .5rem .5rem;
+margin: 20% .5rem .5rem .5rem;
 }
 .gl{
 display: flex;
