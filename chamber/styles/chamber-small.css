@@ -16,10 +16,6 @@ list-style: none;
 }
 header{
 background-color: var(--primary-color);
-position: fixed;
-z-index: 2;
-width: 100%;
-top: 0;
 }
 header li{
 background-color: var(--secondary-color);
@@ -39,7 +35,7 @@ font-weight: bolder;
 main{
 display: grid;
 justify-content: center;
-margin: 5rem .5rem .5rem .5rem;
+margin: .5rem;
 }
 .gl{
 display: flex;
@@ -52,7 +48,6 @@ padding: .2rem;
 border: 1px solid black;
 border-radius: .2rem;
 }
-
 .grid{
 display: flex;
 flex-wrap: wrap;
