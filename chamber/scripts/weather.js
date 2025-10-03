@@ -17,10 +17,19 @@ weather.innerHTML = `<h3>Current Weather⛅️</h3>
                     Sunset: ${sT.getHours()}:${sT.getMinutes()}pm</p>`;
 days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 day = new Date();
+function daY(b){
+if (b == 7){
+b = 0;
+return days[b];
+}
+else{
+return days[b];
+}
+}
 forecast.innerHTML = `<h3>Weather Forecast⛅️</h3>
                      <p>Today: <span>${arr1.list[0].main.temp}&deg;C</span><br><br>
-                    ${days[(day.getDay())+1]}: <span>${arr1.list[1].main.temp}&deg;C</span><br><br>
-                    ${days[(day.getDay())+2]}: <span>${arr1.list[2].main.temp}&deg;C</span><br><br></p>`;
+                    ${daY(day.getDay()+1)}: <span>${arr1.list[1].main.temp}&deg;C</span><br><br>
+                    ${daY(day.getDay()+2)}: <span>${arr1.list[2].main.temp}&deg;C</span><br><br></p>`;
 }
 async function getWeatherApi(){
 try{
