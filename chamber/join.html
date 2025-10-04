@@ -43,37 +43,37 @@
 <form method="get" action="thankyou.html">
 <div>
 <label for="firstName"></label>
-<input type="text" name="firstName" id="firstName" title="firstName" placeholder="First Name" required autocomplete="given-name" />
+<input type="text" name="firstName" id="firstName" title="firstName" placeholder="First Name" required autocomplete="on" />
 </div>
 
 <div>
 <label for="lastName"></label>
-<input name="lastName" type="text" id="lastName" title="lastName" placeholder="Last Name" required autocomplete="last-name" />
+<input name="lastName" type="text" id="lastName" title="lastName" placeholder="Last Name" required autocomplete="on" />
 </div>
 
 <div>
 <label for="organization-title"></label>
-<input type="text" name="organization-title" title="organization-title" required placeholder="Organization Title" autocomplete="organization-title" maxlength="7">
+<input type="text" name="organization-title" id="organization-title" title="organization-title" required placeholder="Organization Title" autocomplete="on" maxlength="7">
 </div>
 
 <div>
 <label for="email"></label>
-<input type="email" name="email" id="email" title="email" required placeholder="Email" autocomplete="off">
+<input type="email" name="email" id="email" title="email" required placeholder="Email" autocomplete="on">
 </div>
 
 <div>
 <label for="tel"></label>
-<input type="tel" name="tel" id="tel" title="tel" placeholder="Phone Number" required autocomplete="phone number">
+<input type="tel" name="tel" id="tel" title="tel" placeholder="Phone Number" required autocomplete="on">
 </div>
 
 <div>
 <label for="organization"></label>
-<input type="text" name="organization" id="organization" required title="organization" autocomplete="organization" placeholder="Organization Name">
+<input type="text" name="organization" id="organization" required title="organization" autocomplete="on" placeholder="Organization Name">
 </div>
 
 <div>
 <label for="membership-level"></label>
-<select name="membership-level" id="ml">
+<select name="membership-level" id="membership-level">
 <option value="NP Membership">NP Membership</option>
 <option value="Bronze Membership">Bronze Membership</option>
 <option value="Silver Membership">Silver Membership</option>
@@ -82,11 +82,10 @@
 </div>
 <div>
 <label for="description"></label>
-<textarea name="description" id="dst"></textarea>
+<textarea name="description" id="description"></textarea>
 </div>
 
 <div>
-<label for="time"></label>
 <input type="hidden" id="timestamp" name="timestamp">
 </div>
 
