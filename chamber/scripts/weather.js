@@ -19,8 +19,7 @@ days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 day = new Date();
 function daY(b){
 if (b >= 7){
-a = b-7;
-return days[a];
+return days[b-7];
 }
 else{
 return days[b];
@@ -29,7 +28,8 @@ return days[b];
 forecast.innerHTML = `<h3>Weather Forecast⛅️</h3>
                      <p>Today: <span>${arr1.list[0].main.temp}&deg;C</span><br><br>
                     ${daY(day.getDay()+1)}: <span>${arr1.list[1].main.temp}&deg;C</span><br><br>
-                    ${daY(day.getDay()+2)}: <span>${arr1.list[2].main.temp}&deg;C</span><br><br></p>`;
+                    ${daY(day.getDay()+2)}: <span>${arr1.list[2].main.temp}&deg;C</span><br><br>
+                    ${daY(day.getDay()+3)}: <span>${arr1.list[2].main.temp}&deg;C</span></p>`;
 }
 async function getWeatherApi(){
 try{
