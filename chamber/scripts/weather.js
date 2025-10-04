@@ -7,7 +7,7 @@ sR = new Date();
 sT = new Date();
 sR.setTime(arr.sys.sunrise);
 sT.setTime(arr.sys.sunset);
-weather.innerHTML = `<h3>Current Weather⛅️</h3>
+weather.innerHTML =`<h3>Current Weather⛅️</h3>
                     <p><span>${arr.main.temp}&deg;C</span><br>
                     ${arr.weather[0].description}<br>
                     High: ${arr.main.temp_max}&deg;<br>

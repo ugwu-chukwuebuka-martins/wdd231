@@ -145,11 +145,81 @@ font-weight: bolder;
 background-color: var(--secondary-color);
 color: white;
 }
-.ew{
+.ew, ew1{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
+@keyframes move{
+from{margin-top: 2rem; background-color: #f9a36e}
+to{margin-top: 0;}
+}
+input, select, textarea, form button{
+margin: .2rem;
+padding: .5rem;
+width: 90%;
+}
+form{
+margin-bottom: 1rem;
+}
+select{
+text-align: center;
+}
+.asd div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 1.5rem;
+border: 1px solid black;
+margin-bottom: 1rem;
+border-radius: 0 1rem 0 1rem;
+background-color: var(--secondary-color);
+width: 15rem;
+transition: all 0.5s ease-out;
+animation-name: move;
+animation-iteration-count: 1;
+animation-duration: 3s;
+}
+.asd p{
+color: white;
+}
+.asd button{
+margin: .2rem;
+padding: .2rem;
+border-radius: .2rem;
+border: 0;
+}
+.asd dialog{
+display: grid;
+grid-template-columns: 1fr .1fr;
+position: absolute;
+top: 30%;
+left: 30%;
+border: none;
+padding: .2rem;
+}
+dialog::backdrop {
+background: rgb(0 0 0 / 70%);
+}
+.asd dialog button{
+grid-column: 2/3;
+}
+.asd dialog p, dialog h2{
+grid-column: 1/2;
+color: black;
+}
+.tk{
+display: grid;
+justify-content: center;
+margin: 16%;
+padding: 2rem;
+border-radius: .5rem;
+background-color: var(--primary-color);
+}
+.tk span{
+color: white;
 }
 #events{
 display: flex;

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chamber of Commerce Join</title>
+<meta name="description" content="chamber of commerce join page">
+<meta name="author" content="Ugwu Chukwuebuka">
+<link rel="icon" href="images/logo.svg">
+<meta property="og:title" content="Chamber of Commerce Join page">
+<meta property="og:description" content="chamber of commerce Join page"> 
+<meta property="og:image" content="https://ugwu-chukwuebuka-martins.github.io/wdd231/chamber/images/logo.svg">
+<meta property="og:url" content="https://ugwu-chukwuebuka-martins.github.io/wdd231/chamber/directory.html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="styles/chamber-small.css">
+<link rel="stylesheet" href="styles/chamber-large.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+<script defer src="scripts/ml.js"></script>
+</head>
+<body>
+<header>
+<div class="hamburge">
+<img src="images/logo.svg" width="70" alt="site logo">
+<span>Chamber Of Commerce</span>
+<div class="toggle"></div>
+</div>
+<nav class="hide">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="directory.html">Directory</a></li>
+<li><a href="">Join</a></li>
+<li><a href="">Discover</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<h1>Join</h1>
+<section class="ew1">
+<aside>
+<form method="get" action="thankyou.html">
+<div>
+<label for="firstName"></label>
+<input type="text" name="firstName" id="firstName" title="firstName" placeholder="First Name" required autocomplete="given-name" />
+</div>
+
+<div>
+<label for="lastName"></label>
+<input name="lastName" type="text" id="lastName" title="lastName" placeholder="Last Name" required autocomplete="last-name" />
+</div>
+
+<div>
+<label for="organization-title"></label>
+<input type="text" name="organization-title" title="organization-title" required placeholder="Organization Title" autocomplete="organization-title" maxlength="7">
+</div>
+
+<div>
+<label for="email"></label>
+<input type="email" name="email" id="email" title="email" required placeholder="Email" autocomplete="off">
+</div>
+
+<div>
+<label for="tel"></label>
+<input type="tel" name="tel" id="tel" title="tel" placeholder="Phone Number" required autocomplete="phone number">
+</div>
+
+<div>
+<label for="organization"></label>
+<input type="text" name="organization" id="organization" required title="organization" autocomplete="organization" placeholder="Organization Name">
+</div>
+
+<div>
+<label for="membership-level"></label>
+<select name="membership-level" id="ml">
+<option value="NP Membership">NP Membership</option>
+<option value="Bronze Membership">Bronze Membership</option>
+<option value="Silver Membership">Silver Membership</option>
+<option value="Gold Membership">Gold Membership</option>
+</select>
+</div>
+<div>
+<label for="description"></label>
+<textarea name="description" id="dst"></textarea>
+</div>
+
+<div>
+<label for="time"></label>
+<input type="hidden" id="timestamp" name="timestamp">
+</div>
+
+<div>
+<button type="submit" id="sub">Submit</button>
+</div>
+
+</form>
+</aside>
+<aside class="asd">
+</aside>
+</section>
+</main>
+<footer>
+<p>&copy;<span id="currentyear"></span> 👑Ugwu Chukwuebuka M.👑</p>
+<p id="lastModified"></p>
+</footer>
+</body>
+</html>
