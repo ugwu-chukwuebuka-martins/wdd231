@@ -1,0 +1,55 @@
+let discov = document.querySelector(".discov");
+alert(lArr());
+getData();
+
+function createCard(arr){
+arr.forEach(i=>{
+let div = document.createElement("div");
+let h2 = document.createElement("h2");
+h2.textContent = i.name;
+let img = document.createElement("img");
+img.setAttribute("src",i.image);
+img.setAttribute("loading","lazy");
+let p = document.createElement("p");
+p.textContent = i.address;
+let a = document.createElement("a");
+a.setAttribute("href",i.website);
+a.textContent = "Learn More";
+div.appendChild(h2);
+div.appendChild(img);
+div.appendChild(p);
+div.appendChild(a);
+discov.appendChild(div);
+})
+}
+
+function lArr(){
+let gIt = localStorage.getItem("dArr");
+dT = Date.now();
+if (gIt)
+{
+if ((Math.floor((Date.now()-(parseInt(gIt)))/86400000,1)) == 0)
+{
+return  "Back so soon! Awesome!";
+}
+else if ((Math.floor((Date.now()-(parseInt(gIt)))/86400000,1)) == 1)
+{
+return "You last visited 1 day ago.";
+}
+else
+{
+return `You last visited ${(Math.floor((Date.now()-parseInt(gIt))/86400000,1))} days ago.`;
+}
+}
+else
+{
+localStorage.setItem("dArr",dT);
+return "Welcome! Let us know if you have any questions.";
+}
+}
+
+async function getData(){
+const response = await fetch("https://ugwu-chukwuebuka-martins.github.io/wdd231/chamber/data/member.json");
+const data = await response.json();
+createCard(data);
+}
