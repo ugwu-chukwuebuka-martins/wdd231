@@ -7,14 +7,14 @@ sR = new Date();
 sT = new Date();
 sR.setTime(arr.sys.sunrise);
 sT.setTime(arr.sys.sunset);
-weather.innerHTML =`<h3>Current Weather⛅️</h3>
-                    <p><span>${arr.main.temp}&deg;C</span><br>
-                    ${arr.weather[0].description}<br>
-                    High: ${arr.main.temp_max}&deg;<br>
-                    Low: ${arr.main.temp_min}&deg;<br>
-                    Humidity: ${arr.main.humidity}%<br>
-                    Sunrise: ${sR.getHours()}:${sR.getMinutes()}am<br>
-                    Sunset: ${sT.getHours()}:${sT.getMinutes()}pm</p>`;
+weather.innerHTML = `<h3>Current Weather⛅️</h3>
+                     <p><span>${arr.main.temp}&deg;C</span><br>
+                     ${arr.weather[0].description}<br>
+                     High: ${arr.main.temp_max}&deg;<br>
+                     Low: ${arr.main.temp_min}&deg;<br>
+                     Humidity: ${arr.main.humidity}%<br>
+                     Sunrise: ${sR.getHours()}:${sR.getMinutes()}am<br>
+                     Sunset: ${sT.getHours()}:${sT.getMinutes()}pm</p>`;
 days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 day = new Date();
 function daY(b){
@@ -26,10 +26,11 @@ return days[b];
 }
 }
 forecast.innerHTML = `<h3>Weather Forecast⛅️</h3>
-                     <p>Today: <span>${arr1.list[0].main.temp}&deg;C</span><br><br>
-                    ${daY(day.getDay()+1)}: <span>${arr1.list[1].main.temp}&deg;C</span><br><br>
-                    ${daY(day.getDay()+2)}: <span>${arr1.list[2].main.temp}&deg;C</span><br><br>
-                    ${daY(day.getDay()+3)}: <span>${arr1.list[2].main.temp}&deg;C</span></p>`;
+                      <p>Today: <span>${arr1.list[0].main.temp}&deg;C</span><br><br>
+                      ${daY(day.getDay()+1)}: <span>${arr1.list[1].main.temp}&deg;C</span><br><br>
+                      ${daY(day.getDay()+2)}: <span>${arr1.list[2].main.temp}&deg;C</span><br><br>
+                      ${daY(day.getDay()+3)}: <span>${arr1.list[2].main.temp}&deg;C</span><br><br>
+                      ${daY(day.getDay()+4)}: <span>${arr1.list[2].main.temp}&deg;C</span></p>`;
 }
 async function getWeatherApi(){
 try{

@@ -61,5 +61,14 @@
     "image": "https://ugwu-chukwuebuka-martins.github.io/wdd231/images/photo.png",
     "membershipLevel": 3,
     "email": "homepage@wtx.com"
+  },
+  {
+    "name": "Tech Posibilities",
+    "address": "Enugu State, Nigeria",
+    "phone": "----------",
+    "website": "https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject",
+    "image": "https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/logo.png",
+    "membershipLevel": 3,
+    "email": "contact@techposibilities.tp"
   }
 ]

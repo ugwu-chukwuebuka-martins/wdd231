@@ -1,0 +1,47 @@
+[
+{
+"name": "TP",
+"price":"N2",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/tptb.png"
+},
+{
+"name": "TP",
+"price":"N5",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/tptop.png"
+},
+{
+"name": "TP",
+"price":"N8",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/tpt.png"
+},
+{
+"name": "WTX",
+"price":"N2",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/wtxtb.png"
+},
+{
+"name": "WTX",
+"price":"N5",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/wtxtop.png"
+},
+{
+"name": "WTX",
+"price":"N8",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/wtxt.png"
+},
+{
+"name": "HT",
+"price":"N2",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/httb.png"
+},
+{
+"name": "HT",
+"price":"N5",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/httop.png"
+},
+{
+"name": "HT",
+"price":"N8",
+"image":"https://ugwu-chukwuebuka-martins.github.io/wdd231/finalproject/images/htt.png"
+}
+]
