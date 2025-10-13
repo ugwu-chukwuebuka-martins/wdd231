@@ -1,12 +1,1 @@
-let tk = document.querySelector(".tk");
-let d1 = JSON.parse(localStorage.getItem('d'));
-
-let createC = (ar) =>{
-tk.innerHTML = `<h1>THANK YOU</h1>
-                <h3>First Name:    <span>${ar[0]}</span></h3>
-                <h3>Last Name:     <span>${ar[1]}</span></h3>
-                <h3>Email:         <span>${ar[2]}</span></h3>
-                <h3>Business Name: <span>${ar[4]}</span></h3>
-                <h3>Time:          <span>${ar[5]}</span></h3>`
-}
-createC(d1);
+let tk = document.querySelector(".tk");let d1 = JSON.parse(localStorage.getItem('d'));let createC = (ar) =>{tk.innerHTML = `<h1>THANK YOU</h1><h3>First Name:    <span>${ar[0]}</span></h3><h3>Last Name:     <span>${ar[1]}</span></h3><h3>Email:         <span>${ar[2]}</span></h3><h3>Business Name: <span>${ar[4]}</span></h3><h3>Time:          <span>${ar[5]}</span></h3>`};createC(d1);
